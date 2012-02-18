@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>fourinverse</title>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    <script src="/js/fourinverse.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top" >
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">fourinverse</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <script id="thumbnailTemplate" type="text/x-jquery-tmpl">
+        <li class="span3">
+          <a class="thumbnail" href="http://www.foursquare.com/v/${id}" title="${name}">
+            <img src="${thumbnail}" alt="${name}">
+          </a>
+        </li>
+      </script>
+      <ul class="thumbnails"></ul>
+    </div><!-- /container -->
+  </body>
+</html>
