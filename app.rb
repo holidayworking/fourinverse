@@ -1,6 +1,5 @@
 require 'bundler'
 require 'sinatra/base'
-require 'coffee-script'
 require 'erb'
 require 'quimby'
 
@@ -40,9 +39,5 @@ class Fourinverse < Sinatra::Base
 
     content_type :json
     result.to_json
-  end
-
-  get '/js/fourinverse.js' do
-      coffee :fourinverse
   end
 end
